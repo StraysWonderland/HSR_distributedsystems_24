@@ -1,10 +1,10 @@
-package de.pan.Controller;
+package de.pan.todobackend.Controller;
 
-import org.springframework.stereotype.Controller;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import de.pan.Service.HelloService;
+import de.pan.todobackend.Service.HelloService;
 
 
 @RestController

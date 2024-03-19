@@ -1,4 +1,4 @@
-package de.pan.Service;
+package de.pan.todobackend.Service;
 
 import org.springframework.stereotype.Service;
 
