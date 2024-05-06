@@ -6,4 +6,4 @@ CREATE TABLE IF NOT EXISTS todo_item (
 );
 
 INSERT INTO todo_item(todo_item_name, todo_item_description)
-VALUES ('Todo Test 1', 'Dies ist eine Test Aufgabe'); 
+VALUES ('Todo Test 1', 'Dies ist eine Test Aufgabe');
