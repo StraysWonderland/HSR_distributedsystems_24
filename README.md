@@ -13,7 +13,7 @@
 
 - Vorteil: Last verteilt sich auf allen Replicas
 
-### Problem bei "traiditionellen" Verteilten System im eigenen Datacenter
+### Problem bei "traditionellen" Verteilten System im eigenen Datacenter
 
 - Aufstocken der Resourcen bei steigender Last kostspielig
 - Resourcen müssen dauerhaft gewartet werden, auch bei fallender Last
@@ -23,6 +23,11 @@
 
 ### Review Questions:
 - Was ist eine der großen Herausforderung für polyglote verteilte Systeme und welche Technologie macht dies erst sehr simpel umsetzbar?
+  - Wie realisiert man Kommunikation zwischen Services und welche HErausforderungen gibt es? Welche Konzepte gibt es um diese Herausforderungen anzugehen?
+  - Weitere Probleme? welche konzepte und technologien gibt es hierfür?
+- Sind distributed Systems und cloud computing das gleiche? 
+- Iaas; Paas; Saas? Erklären und beispiele geben.
+- Typische Probleme in der traditionellen IT? Motivation für verteilte Systeme?
 
 ---
 
@@ -39,6 +44,8 @@
 ### Review Questions:
 - Warum nutzen wir Frameworks wie Springboot?
   - Welche Vorteile bieten Frameworks?
+- Microservices verstehen und erklären? Warum von Monolithischen Anwendungen hin zu Microservices?
+- Welche Herausforderungen gibt es für Microservices?
 - Welche anderen Frameworks kennt ihr? Rein als Vergleich der Funktionsweise
 
 ---
@@ -69,12 +76,14 @@ Probleme werden durch Containerisierung vermieden.
 
 ### Review Questions:
 - Welche Probleme sind die wesentliche Motivation für Container und wie werden diese gelöst?
+- DevOps Problem?
 - Was ist die grundlegende Funktionsweise eines Containers?
 - Wie containirisiere ich eine Applikation?
 - Was ist ein Image und was ein Container?
 - Was ist DockerHub?
 - Muss für jeden einzelnen container die umgebung einzeln installiert werden ?
 - Läuft der container mit rechenpower des Lokalen pc oder auf einem server?
+- Images vs VMs? Was sind wesentliche unterschiede?
 
 --- 
 
@@ -101,6 +110,7 @@ Definition und einfache Erstellung einer Container "Landschaft"
 - Anhand eines Beispiel-Docker-Compose-files:
   - Erkläre was entsteht wenn das docker compose ausgeführt wird.
   - Wie sähe im Vergleich der "klassische" Weg ohne Docker Compose aus
+- Was ist wichtig zu beachten bei der Image Referenz? Welceh Alternative gäbe es?
 
 ---
 
@@ -112,6 +122,13 @@ Schnittstellendefinition um die Kommunikation mit Services übers Netzwerk zu "v
 - Was ist das Richardson Maturity Model?
 
 ---
+
+# Resilience
+Patterns um ein verteiltes system abzuhärten.
+
+- Patterns benennen.
+- Szenario skizzieren um typische Probleme in einer cloud native application landscape aufzuzeigen. 
+- Resilience Patterns um Szenario zu lösen
 
 # Kubernetes
 
@@ -153,7 +170,6 @@ starten und anschließen lassen sich ```kubectl``` befehle ausführen.
 - Weshalb nutzen wir in k8s pods statt direkt mit containern zu arbeiten?
 - Wehalb bevorzugen wir das arbeiten mit Deployments statt direkt mit pods?
 - Was passiert wenn ein Knoten ausfällt; wie sieht der recovery Prozess aus?
-- What are the core ideas/principles of kubernetes
 
 ---
 
